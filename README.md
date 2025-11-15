@@ -8,6 +8,7 @@ npm install --save-dev lint-staged
 npm install git-commit-msg-linter --save-dev
 npm install -D tailwindcss@3.4.4 postcss@8.4.38 autoprefixer@10.4.19
 npx tailwindcss init -p
+npm install -D prettier-plugin-tailwindcss@0.6.5
 
 # ESlint
 
