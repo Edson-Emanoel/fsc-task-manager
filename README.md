@@ -1,0 +1,1 @@
+npm create vite@5.2.0 fsc-task-manager -- --template react
