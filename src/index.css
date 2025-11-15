@@ -1,5 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@tailwind base; /* Faz o reset de muitos elementos html, por exemplo tira os margin e padding das divs */
+@tailwind components; /* */
+@tailwind utilities; /* Aplica os estilos correspondentes a cada classe */
