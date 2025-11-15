@@ -2,6 +2,8 @@ npm create vite@5.2.0 fsc-task-manager -- --template react
 npx eslint --init
 npm install -D prettier
 npm install -D eslint-config-prettier
+npx prettier --write src
+npm i -D husky
 
 # ESlint
 
