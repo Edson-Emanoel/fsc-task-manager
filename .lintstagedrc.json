@@ -1,0 +1,4 @@
+{
+  "*.jsx": ["prettier --write"],
+  "*.js": ["prettier --write"]
+}

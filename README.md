@@ -4,6 +4,7 @@ npm install -D prettier
 npm install -D eslint-config-prettier
 npx prettier --write src
 npm i -D husky
+npm install --save-dev lint-staged
 
 # ESlint
 
