@@ -1,8 +1,10 @@
+import PropTypes from "prop-types"
+
 import {
   CheckIcon,
-  TrashIcon,
-  LoaderIcon,
   DetailsIcon,
+  LoaderIcon,
+  TrashIcon,
 } from "../assets/icons/index"
 import Button from "../components/Button"
 
@@ -54,6 +56,18 @@ const TaskItem = ({ task, handleCheckboxClick, handleDeleteClick }) => {
       </div>
     </div>
   )
+}
+
+// 🔥 ADICIONE ISSO PARA REMOVER TODOS OS ERROS DO ESLINT
+TaskItem.propTypes = {
+  task: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    title: PropTypes.string.isRequired,
+    status: PropTypes.oneOf(["done", "in_progress", "not_started"]).isRequired,
+  }).isRequired,
+
+  handleCheckboxClick: PropTypes.func.isRequired,
+  handleDeleteClick: PropTypes.func.isRequired,
 }
 
 export default TaskItem

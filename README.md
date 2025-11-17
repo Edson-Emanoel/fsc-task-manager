@@ -34,6 +34,8 @@ npm install -D vite-plugin-svgr@4.2.0
 
 npm install sonner@1.5.0
 
+npm install -D eslint-plugin-simple-import-sort@12.1.0
+
 <hr>
 
 # ESlint

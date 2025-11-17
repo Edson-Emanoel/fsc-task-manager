@@ -6,4 +6,5 @@ const TasksSeparator = ({ title, icon }) => {
     </div>
   )
 }
+
 export default TasksSeparator
