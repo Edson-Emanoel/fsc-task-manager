@@ -1,13 +1,13 @@
 const Button = ({ children, variant = "primary", ...rest }) => {
   const getVariantClasses = () => {
     if (variant === "primary") {
-      return "bg-[#00ADB5] text-white";
+      return "bg-[#00ADB5] text-white"
     }
 
     if (variant === "ghost") {
-      return "bg-transparent text-[#818181]";
+      return "bg-transparent text-[#818181]"
     }
-  };
+  }
 
   return (
     <button
@@ -16,7 +16,7 @@ const Button = ({ children, variant = "primary", ...rest }) => {
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

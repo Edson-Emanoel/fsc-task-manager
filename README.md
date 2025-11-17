@@ -32,6 +32,8 @@ npm install -D prettier-plugin-tailwindcss@0.6.5
 
 npm install -D vite-plugin-svgr@4.2.0
 
+npm install sonner@1.5.0
+
 <hr>
 
 # ESlint

@@ -27,6 +27,6 @@ const TASKS = [
     time: "evening",
     status: "not_started",
   },
-];
+]
 
-export default TASKS;
+export default TASKS

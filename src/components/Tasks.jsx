@@ -1,51 +1,53 @@
-import Button from "./Button";
-import { useState } from "react";
-import TASKS from "../constants/tasks";
-import TasksSeparator from "./TasksSeparator";
-import AddIcon from "../assets/icons/add.svg?react";
-import SunIcon from "../assets/icons/sun.svg?react";
-import MoonIcon from "../assets/icons/moon.svg?react";
-import TrashIcon from "../assets/icons/trash.svg?react";
-import CloudSunIcon from "../assets/icons/cloud-sun.svg?react";
-import TaskItem from "./TaskItem";
+import Button from "./Button"
+import { useState } from "react"
+import TASKS from "../constants/tasks"
+import TasksSeparator from "./TasksSeparator"
+import AddIcon from "../assets/icons/add.svg?react"
+import SunIcon from "../assets/icons/sun.svg?react"
+import MoonIcon from "../assets/icons/moon.svg?react"
+import TrashIcon from "../assets/icons/trash.svg?react"
+import CloudSunIcon from "../assets/icons/cloud-sun.svg?react"
+import TaskItem from "./TaskItem"
+import { toast } from "sonner"
 
 const Tasks = () => {
-  const [tasks, setTasks] = useState(TASKS);
+  const [tasks, setTasks] = useState(TASKS)
 
-  const morningTasks = tasks.filter((task) => task.time === "morning");
-  const afternoonTasks = tasks.filter((task) => task.time === "afternoon");
-  const eveningTasks = tasks.filter((task) => task.time === "evening");
+  const morningTasks = tasks.filter((task) => task.time === "morning")
+  const afternoonTasks = tasks.filter((task) => task.time === "afternoon")
+  const eveningTasks = tasks.filter((task) => task.time === "evening")
 
   const handleTaskCheckboxClick = (taskId) => {
     const newTasks = tasks.map((task) => {
       if (task.id !== taskId) {
-        return task;
+        return task
       }
 
-      // Edita
-
       if (task.status === "not_started") {
-        return { ...task, status: "in_progress" };
+        toast.success("Tarefa iniciada com sucesso!")
+        return { ...task, status: "in_progress" }
       }
 
       if (task.status === "in_progress") {
-        return { ...task, status: "done" };
+        toast.success("Tarefa concluída com sucesso!")
+        return { ...task, status: "done" }
       }
 
       if (task.status === "done") {
-        return { ...task, status: "not_started" };
+        toast.success("Tarefa reiniciada com sucesso!")
+        return { ...task, status: "not_started" }
       }
 
-      return task;
-    });
-    console.log(newTasks);
-    setTasks(newTasks);
-  };
+      return task
+    })
+    setTasks(newTasks)
+  }
 
   const handleTaskDeleteClick = async (taskId) => {
-    const newTask = tasks.filter((task) => task.id !== taskId);
-    setTasks(newTask);
-  };
+    const newTask = tasks.filter((task) => task.id !== taskId)
+    setTasks(newTask)
+    toast.success("Tarefa deletada com sucesso!")
+  }
 
   return (
     <div className="w-full px-8 py-16">
@@ -113,7 +115,7 @@ const Tasks = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Tasks;
+export default Tasks

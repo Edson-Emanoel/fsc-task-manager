@@ -1,21 +1,21 @@
-import CheckIcon from "../assets/icons/check.svg?react";
-import TrashIcon from "../assets/icons/trash.svg?react";
-import LoaderIcon from "../assets/icons/loader.svg?react";
-import DetailsIcon from "../assets/icons/details.svg?react";
-import Button from "../components/Button";
+import CheckIcon from "../assets/icons/check.svg?react"
+import TrashIcon from "../assets/icons/trash.svg?react"
+import LoaderIcon from "../assets/icons/loader.svg?react"
+import DetailsIcon from "../assets/icons/details.svg?react"
+import Button from "../components/Button"
 
 const TaskItem = ({ task, handleCheckboxClick, handleDeleteClick }) => {
   const getStatusClasses = () => {
     if (task.status === "done") {
-      return "bg-[#00ADB5] text-[#00ADB5]";
+      return "bg-[#00ADB5] text-[#00ADB5]"
     }
     if (task.status === "in_progress") {
-      return "bg-[#FFAA04] text-[#FFAA04]";
+      return "bg-[#FFAA04] text-[#FFAA04]"
     }
     if (task.status === "not_started") {
-      return "bg-[#35383E] bg-opacity-10 text-[#35383E]";
+      return "bg-[#35383E] bg-opacity-10 text-[#35383E]"
     }
-  };
+  }
 
   return (
     <div
@@ -51,7 +51,7 @@ const TaskItem = ({ task, handleCheckboxClick, handleDeleteClick }) => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TaskItem;
+export default TaskItem
