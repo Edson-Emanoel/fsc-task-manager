@@ -6,7 +6,7 @@
 
 ---
 
-https://alunos.fullstackclub.com.br/area/produto/item/3402834
+https://alunos.fullstackclub.com.br/area/produto/item/3517889
 
 ---
 
@@ -59,6 +59,12 @@ npm install -D vite-plugin-svgr@4.2.0
 
 ```bash
 npm install sonner@1.5.0
+```
+
+# 🔔 Biblioteca de Transilções
+
+```bash
+npm install react-transition-group@4.4.5
 ```
 
 # 📘 ESLint
