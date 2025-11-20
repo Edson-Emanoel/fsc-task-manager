@@ -6,6 +6,10 @@
 
 ---
 
+https://alunos.fullstackclub.com.br/area/produto/item/3402834
+
+---
+
 # 📦 Comandos Utilizados
 
 ## 🏗️ Inicialização do Projeto
@@ -74,4 +78,3 @@ npm install sonner@1.5.0
 - Evita discussões sobre estilo
 
 - Mantém tudo uniforme automaticamente
-
