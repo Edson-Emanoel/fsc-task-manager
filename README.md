@@ -1,53 +1,77 @@
-# Como está ficando (Desktop)
+# 🖥️ Como está ficando (Desktop)
 
 <div>
     <img src="./public/final.png" alt="Tela Final(Até Agora)" />
 </div>
 
-<hr>
+---
 
-## Comandos utilizados
+# 📦 Comandos Utilizados
 
+## 🏗️ Inicialização do Projeto
+
+```bash
 npm create vite@5.2.0 fsc-task-manager -- --template react
+```
 
+# 🧹 ESLint
+
+```bash
 npx eslint --init
-
-npm install -D prettier
-
 npm install -D eslint-config-prettier
-
-npx prettier --write src
-
-npm i -D husky
-
-npm install --save-dev lint-staged
-
-npm install git-commit-msg-linter --save-dev
-
-npm install -D tailwindcss@3.4.4 postcss@8.4.38 autoprefixer@10.4.19
-
-npx tailwindcss init -p
-
-npm install -D prettier-plugin-tailwindcss@0.6.5
-
-npm install -D vite-plugin-svgr@4.2.0
-
-npm install sonner@1.5.0
-
 npm install -D eslint-plugin-simple-import-sort@12.1.0
+```
 
-<hr>
+# 🎨 Prettier
 
-# ESlint
+```bash
+npm install -D prettier
+npm install -D prettier-plugin-tailwindcss@0.6.5
+npx prettier --write src
+```
 
-    - P/ padronizar a escrita de código
-    - Definir padrões de código, escrita, estilo e etc
-    - P/ evitar erros
+# 🧰 Husky + Lint Staged + Commit Linter
 
-# Prettier
+```bash
+npm i -D husky
+npm install --save-dev lint-staged
+npm install git-commit-msg-linter --save-dev
+```
 
-    - P/ padronizar a formatação do código
+# 💅 TailwindCSS + PostCSS + Autoprefixer
 
-## Ambos vão rodar a cada commit
+```bash
+npm install -D tailwindcss@3.4.4 postcss@8.4.38 autoprefixer@10.4.19
+npx tailwindcss init -p
+```
 
-## Padroniza o código entre vários membros de equipe
+# 🖼️ SVG com SVGR
+
+```bash
+npm install -D vite-plugin-svgr@4.2.0
+```
+
+# 🔔 Biblioteca de Toast (Sonner)
+
+```bash
+npm install sonner@1.5.0
+```
+
+# 📘 ESLint
+
+- Padroniza a escrita do código
+
+- Define regras de estilo e boas práticas
+
+- Ajuda a evitar erros comuns
+
+- Facilita a manutenção do projeto
+
+# 🎨 Prettier
+
+- Padroniza a formatação do código
+
+- Evita discussões sobre estilo
+
+- Mantém tudo uniforme automaticamente
+
