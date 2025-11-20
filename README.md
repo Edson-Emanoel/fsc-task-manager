@@ -12,6 +12,10 @@ https://alunos.fullstackclub.com.br/area/produto/item/3517889
 
 # 📦 Comandos Utilizados
 
+```
+npm install uuid@10.0.0
+```
+
 ## 🏗️ Inicialização do Projeto
 
 ```bash
