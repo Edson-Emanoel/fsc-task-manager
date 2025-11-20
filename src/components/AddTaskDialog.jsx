@@ -3,6 +3,7 @@ import "./AddTaskDialog.css"
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { CSSTransition } from "react-transition-group"
+import { toast } from "sonner"
 import { v4 } from "uuid"
 
 import Button from "./Button"
@@ -25,6 +26,10 @@ const AddTaskDialog = ({ isOpen, handleClose, handleSubmit }) => {
   }, [isOpen])
 
   const handleSaveClick = () => {
+    if (!title.trim() || !description.trim()) {
+      toast.error("Preencha todos os capos ! >:(")
+      return
+    }
     handleSubmit({
       id: v4(),
       title: title,
