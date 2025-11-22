@@ -6,7 +6,7 @@
 
 ---
 
-https://alunos.fullstackclub.com.br/area/produto/item/3517889
+https://alunos.fullstackclub.com.br/area/produto/item/3517877
 
 ---
 
