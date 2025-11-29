@@ -1,0 +1,1 @@
+npm i tailwind-variants@0.2.1
