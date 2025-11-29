@@ -58,14 +58,14 @@ const TaskItem = ({ task, handleCheckboxClick, handleDeleteClick }) => {
   )
 }
 
-// 🔥 ADICIONE ISSO PARA REMOVER TODOS OS ERROS DO ESLINT
 TaskItem.propTypes = {
   task: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    time: PropTypes.oneOf(["morning", "afternoon", "evening"]).isRequired,
     status: PropTypes.oneOf(["done", "in_progress", "not_started"]).isRequired,
   }).isRequired,
-
   handleCheckboxClick: PropTypes.func.isRequired,
   handleDeleteClick: PropTypes.func.isRequired,
 }
