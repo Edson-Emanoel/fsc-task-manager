@@ -34,6 +34,7 @@ const Tasks = () => {
   const afternoonTasks = tasks.filter((task) => task.time === "afternoon")
   const eveningTasks = tasks.filter((task) => task.time === "evening")
 
+  // Tem o acesso ao state, por isso as funções estão aqui
   const handleTaskCheckboxClick = (taskId) => {
     const newTasks = tasks.map((task) => {
       if (task.id !== taskId) {
@@ -60,14 +61,7 @@ const Tasks = () => {
     setTasks(newTasks)
   }
 
-  const handleTaskDeleteClick = async (taskId) => {
-    // Chama a API para deletar a tarefa
-    const response = await fetch(`http://localhost:3000/tasks/${taskId}`, {
-      method: "DELETE",
-    })
-    if (!response.ok) {
-      return toast.error("Erro ao deletar a tarefa. Por favor, tente novamente")
-    }
+  const onDeleteTaskSuccess = async (taskId) => {
     // Atualiza o state
     const newTask = tasks.filter((task) => task.id !== taskId)
     setTasks(newTask)
@@ -130,7 +124,7 @@ const Tasks = () => {
               key={task.id}
               task={task}
               handleCheckboxClick={handleTaskCheckboxClick}
-              handleDeleteClick={handleTaskDeleteClick}
+              onDeleteSuccess={onDeleteTaskSuccess}
             />
           ))}
         </div>
@@ -143,7 +137,7 @@ const Tasks = () => {
               key={task.id}
               task={task}
               handleCheckboxClick={handleTaskCheckboxClick}
-              handleDeleteClick={handleTaskDeleteClick}
+              onDeleteSuccess={onDeleteTaskSuccess}
             />
           ))}
         </div>
@@ -156,7 +150,7 @@ const Tasks = () => {
               key={task.id}
               task={task}
               handleCheckboxClick={handleTaskCheckboxClick}
-              handleDeleteClick={handleTaskDeleteClick}
+              onDeleteSuccess={onDeleteTaskSuccess}
             />
           ))}
         </div>
