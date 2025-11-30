@@ -1,38 +1,45 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Estudar FSC",
       "description": "Estudar para prova de FSC",
       "time": "morning",
       "status": "done"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Ir pra academia",
       "description": "Pra ganhar mais musculos e buscar a Valentina",
       "time": "afternoon",
       "status": "in_progress"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Estudar React",
       "description": "Estudar para aula",
       "time": "afternoon",
       "status": "in_progress"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Jogar",
       "description": "Finalmente um tempo p/ eu me divertir",
       "time": "evening",
       "status": "not_started"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Ler livro",
       "description": "Ler o livro do George Orwell",
       "time": "evening",
+      "status": "not_started"
+    },
+    {
+      "id": "7c62a84c-c7e9-4af8-97ee-bb206f1f1ef3",
+      "title": "teste",
+      "time": "evening",
+      "description": "testeDescr",
       "status": "not_started"
     }
   ]
