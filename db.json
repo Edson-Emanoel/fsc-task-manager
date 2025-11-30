@@ -1,27 +1,6 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "title": "Estudar FSC",
-      "description": "Estudar para prova de FSC",
-      "time": "morning",
-      "status": "done"
-    },
-    {
-      "id": "2",
-      "title": "Ir pra academia",
-      "description": "Pra ganhar mais musculos e buscar a Valentina",
-      "time": "afternoon",
-      "status": "in_progress"
-    },
-    {
-      "id": "3",
-      "title": "Estudar React",
-      "description": "Estudar para aula",
-      "time": "afternoon",
-      "status": "in_progress"
-    },
-    {
       "id": "4",
       "title": "Jogar",
       "description": "Finalmente um tempo p/ eu me divertir",
@@ -36,10 +15,17 @@
       "status": "not_started"
     },
     {
-      "id": "7c62a84c-c7e9-4af8-97ee-bb206f1f1ef3",
-      "title": "teste",
-      "time": "evening",
-      "description": "testeDescr",
+      "id": "a7dc80ec-aac2-4cae-981a-1d56280a57f3",
+      "title": "Ir pra academia",
+      "time": "afternoon",
+      "description": "Ir p/ academia e visitar a mãe",
+      "status": "not_started"
+    },
+    {
+      "id": "7e0a286b-9912-4e8a-89f0-a436054669a7",
+      "title": "Ir pro colégio",
+      "time": "morning",
+      "description": "-_-",
       "status": "not_started"
     }
   ]
