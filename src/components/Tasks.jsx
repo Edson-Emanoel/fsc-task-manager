@@ -68,20 +68,13 @@ const Tasks = () => {
     toast.success("Tarefa deletada com sucesso!")
   }
 
-  const handleAddTaskSubmit = async (task) => {
-    // Chama a API p/ adicionar a tarefa
-    const response = await fetch("http://localhost:3000/tasks", {
-      method: "POST",
-      body: JSON.stringify(task),
-    })
-
-    if (!response.ok) {
-      return toast.error(
-        "Erro ao adicionar a tarefa. Por favor, tente novamente"
-      )
-    }
+  const onTaskSubmitSuccess = async (task) => {
     setTasks([...tasks, task])
     toast.success("Tarefa adicionada com sucesso!")
+  }
+
+  const onTaskSubmitError = () => {
+    toast.error("Erro ao adicionar a tarefa. Por favor, tente denovo novamente")
   }
 
   return (
@@ -108,7 +101,8 @@ const Tasks = () => {
           <AddTaskDialog
             isOpen={addTaskDialogIsOpen}
             handleClose={() => setAddTaskDialogIsOpen(false)}
-            handleSubmit={handleAddTaskSubmit}
+            onSubmitSuccess={onTaskSubmitSuccess}
+            onSubmitError={onTaskSubmitError}
           />
         </div>
       </div>
