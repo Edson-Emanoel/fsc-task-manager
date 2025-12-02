@@ -1,31 +1,24 @@
 {
   "tasks": [
     {
-      "id": "6a09",
-      "title": "a",
+      "id": "60fd",
+      "title": "Ir pra academia",
+      "time": "afternoon",
+      "description": "Ir p/ academia e visitar a mãe",
+      "status": "not_started"
+    },
+    {
+      "id": "10e3",
+      "title": "Ir pro colégio",
       "time": "morning",
-      "description": "a",
+      "description": "-.-",
       "status": "not_started"
     },
     {
-      "id": "66a7",
-      "title": "asdsad",
+      "id": "5f40",
+      "title": "Programar 2h",
       "time": "evening",
-      "description": "sadfsdgasdg",
-      "status": "not_started"
-    },
-    {
-      "id": "cbeb",
-      "title": "pregui",
-      "time": "evening",
-      "description": "0_0",
-      "status": "not_started"
-    },
-    {
-      "id": "352e",
-      "title": "a",
-      "time": "evening",
-      "description": "asfcasf",
+      "description": "(0_0)",
       "status": "not_started"
     }
   ]
