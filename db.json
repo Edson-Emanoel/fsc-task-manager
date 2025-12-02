@@ -8,17 +8,17 @@
       "status": "not_started"
     },
     {
-      "id": "10e3",
-      "title": "Ir pro colégio",
-      "time": "morning",
-      "description": "=_=",
-      "status": "not_started"
-    },
-    {
       "id": "5f40",
       "title": "Programar 2h",
       "time": "evening",
       "description": "(0_0)",
+      "status": "not_started"
+    },
+    {
+      "id": "fc2e",
+      "title": "Ir pro colégio",
+      "time": "morning",
+      "description": "0_0",
       "status": "not_started"
     }
   ]
