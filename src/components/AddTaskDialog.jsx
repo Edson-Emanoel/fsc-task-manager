@@ -64,7 +64,7 @@ const AddTaskDialog = ({
 
     if (!response.ok) {
       setIsLoading(false)
-      onSubmitError()
+      return onSubmitError()
     }
 
     onSubmitSuccess(task)
