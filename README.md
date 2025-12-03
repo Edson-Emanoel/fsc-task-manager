@@ -6,27 +6,12 @@
 
 ---
 
-https://alunos.fullstackclub.com.br/area/produto/item/3576442
-
----
+## Vídeo: https://alunos.fullstackclub.com.br/area/produto/item/3576443
 
 # 📦 Comandos Utilizados
 
 ```
 npm install uuid@10.0.0
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 ## 🏗️ Inicialização do Projeto
