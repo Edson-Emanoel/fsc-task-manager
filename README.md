@@ -6,7 +6,7 @@
 
 ---
 
-https://alunos.fullstackclub.com.br/area/produto/item/3576441
+https://alunos.fullstackclub.com.br/area/produto/item/3576442
 
 ---
 
@@ -14,6 +14,19 @@ https://alunos.fullstackclub.com.br/area/produto/item/3576441
 
 ```
 npm install uuid@10.0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ## 🏗️ Inicialização do Projeto
