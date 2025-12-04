@@ -49,11 +49,14 @@ const AddTaskDialog = ({
     handleClose()
   }
 
-  // const titleError = errors.find((error) => error.inputName === "title")
-  // const timeError = errors.find((error) => error.inputName === "time")
-  // const descriptionError = errors.find(
-  //   (error) => error.inputName === "description"
-  // )
+  const handleCancelClick = () => {
+    reset({
+      title: "",
+      time: "morning",
+      description: "",
+    })
+    handleClose()
+  }
 
   return (
     <CSSTransition
@@ -131,7 +134,8 @@ const AddTaskDialog = ({
                     size="large"
                     className="w-full"
                     color="secondary"
-                    onClick={handleClose}
+                    onClick={handleCancelClick}
+                    type="button"
                   >
                     Cancelar
                   </Button>
