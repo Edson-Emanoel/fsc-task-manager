@@ -17,9 +17,10 @@ import TasksSeparator from "./TasksSeparator"
 // Tem o acesso ao "state", por isso as funções estão aqui
 const Tasks = () => {
   const queryClient = useQueryClient()
-  // Importantíssimo deixa "mais liso" a aplicação.
+  // Importantíssimo deixa a aplicação "mais lisa".
   // Busca os dados e muda o state em um só lugar
   // Tem uma agilidade ótima para carregar dados em geral, por conta do cache que deve ocorrer por conta do Context do ReactQuery
+  // É o cache
   const { data: tasks } = useQuery({
     queryKey: "tasks",
     queryFn: async () => {
@@ -64,18 +65,6 @@ const Tasks = () => {
     queryClient.setQueryData("tasks", newTasks)
   }
 
-  const onTaskSubmitSuccess = async (task) => {
-    // Atualiza o cache, adicionando a nova tarefa ao mesmo
-    queryClient.setQueryData("tasks", (currentTasks) => {
-      return [...currentTasks, task]
-    })
-    toast.success("Tarefa adicionada com sucesso!")
-  }
-
-  const onTaskSubmitError = () => {
-    toast.error("Erro ao adicionar a tarefa. Por favor, tente denovo novamente")
-  }
-
   return (
     <div className="w-full px-8 py-16">
       <div className="flex w-full justify-between">
@@ -100,8 +89,6 @@ const Tasks = () => {
           <AddTaskDialog
             isOpen={addTaskDialogIsOpen}
             handleClose={() => setAddTaskDialogIsOpen(false)}
-            onSubmitSuccess={onTaskSubmitSuccess}
-            onSubmitError={onTaskSubmitError}
           />
         </div>
       </div>
