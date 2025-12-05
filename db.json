@@ -1,10 +1,17 @@
 {
   "tasks": [
     {
-      "id": "160f",
+      "id": "7cda1a6a-5a89-46fc-8073-52a62d27ea0d",
       "title": "Jogar",
       "time": "evening",
-      "description": "ad",
+      "description": "Tempo de Paz",
+      "status": "not_started"
+    },
+    {
+      "id": "64120665-c94e-4024-83c6-cd5ff602b2bd",
+      "title": "Ir pra academia",
+      "time": "afternoon",
+      "description": "ir p/ academia",
       "status": "not_started"
     }
   ]

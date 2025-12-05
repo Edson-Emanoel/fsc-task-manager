@@ -5,6 +5,7 @@ import { useRef } from "react"
 import { createPortal } from "react-dom"
 import { useForm } from "react-hook-form"
 import { CSSTransition } from "react-transition-group"
+import { v4 } from "uuid"
 
 import { LoaderIcon } from "../assets/icons"
 import Button from "./Button"
@@ -27,7 +28,7 @@ const AddTaskDialog = ({
   const nodeRef = useRef() // Usa para acessar o el. HTML, como por exemplo pegar o valor do input
 
   const handleSaveClick = async (data) => {
-    const task = { ...data, status: "not_started" }
+    const task = { ...data, id: v4(), status: "not_started" }
 
     // Chama a API p/ adicionar a tarefa
     const response = await fetch("http://localhost:3000/tasks", {

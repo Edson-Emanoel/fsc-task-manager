@@ -28,7 +28,7 @@ const TaskItem = ({ task, handleCheckboxClick }) => {
       onSuccess: () => {
         // Filtra as tarefas do cache
         queryClient.setQueryData("tasks", (oldTasks) => {
-          return oldTasks.filter((oldTask) => oldTask.id !== oldTask.id)
+          return oldTasks.filter((oldTask) => oldTask.id !== task.id)
         })
         toast.success("Tarefa deletada com sucesso!")
       },
