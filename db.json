@@ -1,24 +1,10 @@
 {
   "tasks": [
     {
-      "id": "5f40",
-      "title": "Programar 2h",
+      "id": "160f",
+      "title": "Jogar",
       "time": "evening",
-      "description": "(0_0)",
-      "status": "not_started"
-    },
-    {
-      "id": "1139",
-      "title": "Ir pra academia",
-      "time": "afternoon",
-      "description": "Ir p/ academia e visitar a mãe",
-      "status": "not_started"
-    },
-    {
-      "id": "3549",
-      "title": "tesste",
-      "time": "afternoon",
-      "description": "testeDesc",
+      "description": "ad",
       "status": "not_started"
     }
   ]

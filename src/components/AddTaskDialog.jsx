@@ -86,6 +86,7 @@ const AddTaskDialog = ({
 
               <div className="flex w-[336px] flex-col space-y-4">
                 <Input
+                  type="text"
                   id="title"
                   label="Título"
                   placeholder="Insira o título da tarefa"
@@ -112,6 +113,7 @@ const AddTaskDialog = ({
                 />
 
                 <Input
+                  type="text"
                   id="description"
                   label="Descrição da Tarefa"
                   placeholder="Descreva a tarefa"
@@ -162,7 +164,6 @@ const AddTaskDialog = ({
 AddTaskDialog.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
 }
 
 export default AddTaskDialog

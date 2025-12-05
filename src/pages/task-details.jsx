@@ -118,6 +118,7 @@ const TaskDetailsPage = () => {
           <div className="space-y-6 rounded-xl bg-brand-white p-6">
             <div>
               <Input
+                type="text"
                 id="title"
                 label="Título"
                 {...register("title", {
@@ -145,6 +146,7 @@ const TaskDetailsPage = () => {
 
             <div>
               <Input
+                type="text"
                 id="description"
                 label="Descrição"
                 {...register("description", {
